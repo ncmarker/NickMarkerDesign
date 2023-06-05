@@ -1,2 +1,1 @@
-# NickMarkerDesign
-Personal website 
+https://ncmarker.github.io/NickMarkerDesign/projects.html
