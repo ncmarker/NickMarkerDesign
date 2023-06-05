@@ -1,1 +1,1 @@
-https://ncmarker.github.io/NickMarkerDesign/projects.html
+https://ncmarker.github.io/NickMarkerDesign
