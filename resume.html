@@ -32,17 +32,7 @@
 		<!--jQUERY CODE FOR DOWNLOAD BUTTON START-->
 		<!-- <script   src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> -->
 
-		<script>
-			$(document).ready(function() {
-				//alert('Hello World')
 
-				$("#resbutton").hover(function(){  
-				 	$('#dload').attr('src','img/resume/downloadicon_purple.png');  
-				 	}, function(){  
-					$('#dload').attr('src','img/resume/downloadicon_white.png');  
-				});  
-			});
-		</script>
 
 		<!--FAVICON-->
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -205,6 +195,24 @@
 
 	<script>
 
+		/*--DOWNLOAD ICON CHANGE ON HOVER--*/
+		document.addEventListener('DOMContentLoaded', function () {
+	        // Set the default image on page load
+	        var dload = document.getElementById('dload');
+	        dload.src = 'img/resume/downloadicon_white.png';
+
+	        // Hover effect
+	        var resbutton = document.getElementById('resbutton');
+	        
+	        resbutton.addEventListener('mouseenter', function () {
+	            dload.src = 'img/resume/downloadicon_purple.png';
+	        });
+
+	        resbutton.addEventListener('mouseleave', function () {
+	            dload.src = 'img/resume/downloadicon_white.png';
+	        });
+	    });
+
 		/*--NAVBAR SLIDE IN/OUT--*/
 		const hamburgerBtn = document.getElementById("js-hamburger");
 		const topLine = document.getElementById("js-top-line");
@@ -225,6 +233,8 @@
 		$("#js-bottom-line").toggleClass("active");
 		$("#js-nav").toggleClass("show");
 		});
+
+
 	</script>
 
 	</body>
